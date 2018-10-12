@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="horizontal"
+              android:padding="@dimen/dp30"
+    >
+
+    <TextView
+        android:id="@+id/zhongwen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border_blue_selector2"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp50"
+        android:paddingTop="@dimen/dp50"
+        android:text="@string/jiantizhongwen"
+        android:textColor="@color/text_gaojishezhi_selector2"
+        android:textSize="@dimen/sp40"/>
+
+    <TextView
+        android:id="@+id/yingwen"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border_blue_selector2"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp50"
+        android:paddingTop="@dimen/dp50"
+        android:text="@string/yingwen"
+        android:textColor="@color/text_gaojishezhi_selector2"
+        android:textSize="@dimen/sp40"/>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_line_color">#e5e5e5</color>
+    <color name="app_black">#141414</color>
+    <color name="price_color">#f56030</color>
+    <color name="btn_go_play_normal">#33b332</color>
+    <color name="btn_go_play_press">#80ff80</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#eeffffff</color>
+    <color name="white80">#55ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="gray1">#ff6b6c79</color>
+    <color name="btn_red_color">#801034</color>
+    <color name="btn_click_red_color">#00562d</color>
+    <color name="circle_red_color">#d51417</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="text_black_color">#1e1e1e</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="xibei_red">#ffea5407</color>
+    <color name="xibei_gray">#88f7f3e8</color>
+    <color name="gray2">#33f7f3e8</color>
+    <color name="biger_orange">#ffea5407</color>
+    <color name="orange1">#fffd6650</color>
+    <color name="orange2">#ffef7f1b</color>
+    <color name="purple1">#ff444264</color>
+    <color name="purple2">#ff2d2c44</color>
+    <color name="green1">#ff0ed185</color>
+    <color name="green2">#ff53b432</color>
+    <color name="red1">#ffd2231b</color>
+    <color name="golden">#ffb68044</color>
+
+    <color name="color_99ef7f1a">#22ef7f1a</color>
+    <color name="color_fdf2e8">#fdf2e8</color>
+
+    <color name="acacac">#acacac</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_ff1800">#ff1800</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_c9c9c9">#c9c9c9</color>
+    <color name="color_fbe6d3">#fbe6d3</color>
+    <color name="color_fcf2e8">#fcf2e8</color>
+    <color name="color_ffcccc">#ffcccc</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+
+    <color name="color_4B4B4B">#4B4B4B</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+
+    <color name="light_gray_btn">#33cccccc</color>
+    <color name="half_trans_dark_gray">#33000000</color>
+
+    <color name="light_blue_btn">#1f3aa8d9</color>
+    <color name="half_trans_dark_blue">#bb3aa8d9</color>
+
+    <color name="half_trans_white">#ccffffff</color>
+
+
+    <!-- 我用到的颜色 -->
+    <!-- 主题色 -->
+    <color name="corlor_status_fade">#99ef7f1a</color>
+    <!-- 比主题色淡一点 -->
+    <color name="corlor_status">#ef7f1a</color>
+
+    <!-- Dialog背景颜色 -->
+    <color name="color_fcf6e6">#fcf6e6</color>
+
+
+    <!-- 按钮颜色 灰色的字体颜色 -->
+    <color name="color_414141">#414141</color>
+
+    <!-- 按钮颜色 灰色的字体颜色 淡一点的-->
+    <color name="color_666666">#666666</color>
+    <color name="color_777777">#777777</color>
+
+    <color name="color_divide">#e6e6e6</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ef7f1a">#ef7f1a</color>
+    <color name="color_blue_fade">#333aa8d9</color>
+    <color name="color_blue">#3aa8d9</color>
+    <color name="color_red_fade">#88ff4e43</color>
+    <color name="color_red">#ff4e43</color>
+
+
+
+    <!-- 下划线灰色 -->
+    <color name="line_gray">#dcdcdc</color>
+    <color name="gray_search_text">#4e4e4e</color>
+    <color name="half_trans">#55ffffff</color>
+    <color name="color_D2D2D2">#d2d2d2</color>
+    <color name="color_A7A7A7">#A7A7A7</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_444444">#444444</color>
+</resources>

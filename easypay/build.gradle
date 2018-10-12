@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.acewill.easypay"
+        minSdkVersion 17
+        targetSdkVersion 24
+//        multiDexEnabled true
+        //20180531
+//        versionCode 12 //test
+        versionCode 5//normal
+//        versionName "1.11.0" //test
+        versionName "1.4.0" //normal
+    }
+//    http://sz.canxingjian.com/management/upload?resumableChunkNumber=6&resumableChunkSize=1048576&resumableCurrentChunkSize=1048576&resumableTotalSize=8191217&resumableType=application%2Fvnd.android.package-archive&resumableIdentifier=8191217-pos_zizhushitang_v12_test_20171215apk&resumableFilename=pos_zizhushitang_v1.2_test_20171215.apk&resumableRelativePath=pos_zizhushitang_v1.2_test_20171215.apk&resumableTotalChunks=7
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("acewill_keystore.keystore")
+            storePassword "acewill"
+            keyAlias "acewill"
+            keyPassword "acewill"
+            v2SigningEnabled false
+        }
+        debug {
+            keyAlias 'acewill'
+            keyPassword 'acewill'
+            storeFile file('C:/Users/Administrator/Desktop/keystore/acewill_keystore')
+            storePassword 'acewill'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    //    compile project(':indecator_library')
+    //    compile project(':payLibrary')
+    //    compile project(':okHttp')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/classes.jar')
+    //下面两个是支付宝使用到的http请求
+    compile files('libs/commons-httpclient-3.0.1.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/d2xx.jar')
+    compile files('libs/jaxen-1.1-beta-6.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/org.slf4j.api_1.6.4.jar')
+    compile files('libs/POSSDKForAndroid.jar')
+    compile files('libs/printerlibs.jar')
+    compile files('libs/rd_printersdk.jar')
+    //    compile files('libs/retrofit-2.1.0.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/Xg_sdk_v2.46_20160602_1638.jar')
+    compile files('libs/xstream-1.4.5.jar')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/dom4j-1.6.1.jar')
+    compile 'com.youth.banner:banner:1.4.9'
+    //图片轮播最新版本
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //eventBus 3.0
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    //添加appCompat
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'org.litepal.android:core:1.5.1'
+    //引入数据库，但是其他的配置还没有开始搞
+    compile(name: 'horizontalListView', ext: 'aar')
+    compile project(':xrecyclerview')
+    compile 'org.litepal.android:core:1.5.1'
+    compile project(':okHttp')
+    compile files('libs/zxing.jar')
+    compile 'com.github.ForgetAll:LoadingDialog:v1.0.4'
+
+    //商米副屏显示
+    compile 'com.sunmi:sunmiui:1.0.2'
+    compile 'com.sunmi:DS_Lib:1.0.9'   //商米提供的lib库，包含已封装好的接口
+}

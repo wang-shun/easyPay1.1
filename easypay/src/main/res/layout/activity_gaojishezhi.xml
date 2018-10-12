@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <com.acewill.ordermachine.widget.TitileLayout
+        android:id="@+id/title_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        app:m_title="高级设置"></com.acewill.ordermachine.widget.TitileLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_cccccc"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/color_white"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mendianpeizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_gaojishezhi_selector"
+                    android:drawableLeft="@drawable/mendianpeizhi_img"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="门店配置"
+                    android:textColor="@color/text_gaojishezhi_selector"
+                    android:textSize="@dimen/sp25"/>
+
+                <TextView
+                    android:id="@+id/error_count2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_dot_orange"
+                    android:textColor="@color/color_white"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/color_white"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/zhongduanpeizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_gaojishezhi_selector"
+                    android:drawableLeft="@drawable/zhongduanpeizhi_img"
+                    android:drawablePadding="@dimen/dp5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="终端配置"
+                    android:textColor="@color/text_gaojishezhi_selector"
+                    android:textSize="@dimen/sp25"/>
+
+                <TextView
+                    android:id="@+id/error_count"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_dot_orange"
+                    android:textColor="@color/color_white"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/color_white"></View>
+
+            <TextView
+                android:id="@+id/guanyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_gaojishezhi_selector"
+                android:drawableLeft="@drawable/guanyu_img"
+                android:drawablePadding="@dimen/dp5"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="关于"
+                android:textColor="@color/text_gaojishezhi_selector"
+                android:textSize="@dimen/sp25"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/color_white"></View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_ly"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

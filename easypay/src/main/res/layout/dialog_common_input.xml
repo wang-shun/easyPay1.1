@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/border_orange_normal"
+              android:orientation="vertical"
+              android:padding="@dimen/dp25">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="绑定终端"
+        android:textColor="@color/color_4B4B4B"
+        android:textSize="@dimen/sp40"/>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="@dimen/dp720"
+        android:layout_height="@dimen/dp75"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@drawable/border_orange_normal"
+        android:hint="请输入"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/dp10"
+        android:textSize="@dimen/sp35"/>
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_code_hasdrawableleft"
+        android:layout_width="@dimen/dp720"
+        android:layout_height="@dimen/dp75"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@drawable/border_orange_normal"
+        android:drawableLeft="@drawable/scan_qrcode"
+        android:hint="请输入"
+        android:inputType="textPassword|number"
+        android:paddingLeft="@dimen/dp10"
+        android:textSize="@dimen/sp35"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp720"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp75"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/border_orange_selector"
+            android:text="取消"
+            android:textColor="@color/acacac"
+            android:textSize="@dimen/sp35"/>
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp75"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/border_orange_selector"
+            android:text="绑定"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp35"/>
+    </LinearLayout>
+</LinearLayout>

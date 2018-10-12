@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:id="@+id/dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="开钱箱"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/close_img"/>
+    </RelativeLayout>
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="64dp"-->
+    <!--android:background="#FFFFBB33"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/default_img"/>-->
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp20"
+        android:paddingTop="@dimen/dp20"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/sp18"/>
+
+    <!--<EditText-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:id="@+id/id_txt_username"-->
+    <!--android:padding="@dimen/dp8"-->
+    <!--android:layout_width="@dimen/dp350"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border_black_normal"-->
+    <!--android:hint="请输入活选择具有钱箱权限账户"-->
+    <!--/>-->
+
+    <com.acewill.ordermachine.widget.DropEditText
+        android:id="@+id/common_user_et"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:background="@drawable/border_black_normal"
+        app:drawableRight="@drawable/arrow_down"
+        app:drawableRightVisible="true"
+        app:dropMode="flow_parent"
+        app:hint="请输入或选择具有钱箱权限账户"></com.acewill.ordermachine.widget.DropEditText>
+
+
+    <com.acewill.ordermachine.widget.DropEditText
+        android:id="@+id/common_pwd_et"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp20"
+        app:background="@drawable/border_black_normal"
+        app:drawableRight="@drawable/arrow_down"
+        app:drawableRightVisible="true"
+        app:dropMode="flow_parent"
+        app:hint="请输入密码"
+        app:inputType="textPassword"></com.acewill.ordermachine.widget.DropEditText>
+
+
+    <Button
+        android:id="@+id/dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/border_blue_selector"
+        android:padding="@dimen/dp5"
+        android:text="开钱箱"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp25"/>
+
+</LinearLayout>

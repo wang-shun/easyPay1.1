@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <!-- 第三行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/workshift_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp50"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:gravity="center"
+                android:text="开班时间"
+                android:textColor="@color/gray_search_text"/>
+
+
+            <TextView
+                android:id="@+id/workshift_banci_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="班次"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp80"
+                android:layout_toLeftOf="@id/workshift_banci_tv"
+                android:text="交班时间"
+                android:textColor="@color/gray_search_text"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/workshift_realname_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="当班人"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_statu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@color/gray_search_text"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/workshift_shishou"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="销售实收"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_kaibanmoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开班钱箱"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_jiaobanmoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="交班钱箱"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_yingjiaomoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/gray_search_text"/>
+
+            <TextView
+                android:id="@+id/workshift_xianjinchae"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/gray_search_text"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/workshift_budajiaojieban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/border_blue_selector"
+                android:paddingBottom="@dimen/dp3"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:paddingTop="@dimen/dp3"
+                android:text="@string/budajiaojieban"
+                android:textColor="@color/color_white"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

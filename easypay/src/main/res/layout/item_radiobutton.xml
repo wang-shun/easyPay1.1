@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp20"
+    android:background="@drawable/border_blue_selector3"
+    android:button="@null"
+    android:paddingBottom="@dimen/dp5"
+    android:paddingLeft="@dimen/dp25"
+    android:paddingRight="@dimen/dp25"
+    android:paddingTop="@dimen/dp5"
+    android:text="@string/yiwancheng"
+    android:textColor="@color/text_gaojishezhi_selector2">
+</TextView>

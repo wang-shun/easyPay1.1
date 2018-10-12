@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp100"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/xiadanshijian"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/jintian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_blue_selector3"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp25"
+                    android:paddingRight="@dimen/dp25"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/jintian"
+                    android:textColor="@color/text_gaojishezhi_selector2"
+                    >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/zuotian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:background="@drawable/border_blue_selector3"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp25"
+                    android:paddingRight="@dimen/dp25"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/zuotian"
+                    android:textColor="@color/text_gaojishezhi_selector2">
+                </RadioButton>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp100"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dayinji"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp">
+            </TextView>
+
+
+            <com.acewill.ordermachine.widget.MyGridView
+                android:id="@+id/mygridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:background="@null"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="@dimen/dp20"
+                android:listSelector="@color/transparent"
+                android:numColumns="5"
+                android:verticalSpacing="@dimen/dp10"></com.acewill.ordermachine.widget.MyGridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp100"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/dayinzhungtai"
+                android:textColor="@color/color_blue"
+                android:textSize="15sp">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp20"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/quanbu2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_blue_selector3"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp25"
+                    android:paddingRight="@dimen/dp25"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/quanbu"
+                    android:textColor="@color/text_gaojishezhi_selector2"
+                    >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/yiwancheng"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:background="@drawable/border_blue_selector3"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp25"
+                    android:paddingRight="@dimen/dp25"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/yiwancheng"
+                    android:textColor="@color/text_gaojishezhi_selector2">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/weiwancheng"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:background="@drawable/border_blue_selector3"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp25"
+                    android:paddingRight="@dimen/dp25"
+                    android:paddingTop="@dimen/dp5"
+                    android:text="@string/weiwancheng"
+                    android:textColor="@color/text_gaojishezhi_selector2">
+                </RadioButton>
+
+
+            </RadioGroup>
+
+            <com.acewill.ordermachine.widget.CommonEditText
+                android:id="@+id/search_et"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/border_black_normal"
+                android:drawableLeft="@null"
+                android:drawablePadding="@dimen/dp5"
+                android:hint="@string/qingshurudayiinbianhua"
+                android:padding="@dimen/dp5"/>
+
+            <TextView
+                android:id="@+id/search_btn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/border_blue_selector"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:text="@string/chaxun"
+                android:textColor="@color/color_white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/color_blue">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dayinbianhao"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dayinji"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dayinzhungtai"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dingdanhao"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dayinbianhao"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/xiadanshijian"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/dingdanjine"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/color_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/zhifufangshi"
+                android:textColor="@color/color_white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/caozuo"
+                android:textColor="@color/color_white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

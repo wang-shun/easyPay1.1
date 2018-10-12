@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/退单"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/close_img"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp20"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30"
+        android:paddingTop="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/gaojishezhi_left_text"
+                android:text="@string/dingdanhao2"/>
+
+            <TextView
+                android:id="@+id/item_dingdanhao_tv"
+                style="@style/gaojishezhi_rigth_text"
+                android:text="9526"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/gaojishezhi_left_text"
+                android:text="@string/shishoujine2"/>
+
+            <TextView
+                android:id="@+id/item_shishoujine_tv"
+                style="@style/gaojishezhi_rigth_text"
+                android:text="38:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/gaojishezhi_left_text"
+                android:text="@string/zhifufangshi2"/>
+
+            <TextView
+                android:id="@+id/item_zhifufangshi_tv"
+                style="@style/gaojishezhi_rigth_text"
+                android:text="支付宝"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/gaojishezhi_left_text"
+                android:text="是否退款:"/>
+
+            <RadioGroup
+                android:id="@+id/item_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/item_radio_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是（按原路退回）"
+                    android:textColor="@color/color_666666"/>
+
+                <RadioButton
+                    android:id="@+id/item_radio_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:text="否"
+                    android:textColor="@color/color_666666"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tuidan_reason_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_e6e6e6"
+            android:padding="@dimen/dp10"
+            android:text="*退单原因"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp50"></ListView>
+
+            <Button
+                android:id="@+id/dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp25"
+                android:background="@drawable/border_blue_selector"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/tuidan"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/sp25"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

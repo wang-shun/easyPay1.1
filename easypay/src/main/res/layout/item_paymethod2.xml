@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp80"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/paymethod_yidongzhifu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/num_btn_selector_blue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移动支付"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp30"/>
+
+        <TextView
+            android:paddingBottom="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信/支付宝"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp15"/>
+
+    </LinearLayout>
+
+</LinearLayout>

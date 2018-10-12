@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <com.acewill.ordermachine.widget.TitileLayout
+        android:id="@+id/title_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        app:m_title="@string/huiyuanchaxun"></com.acewill.ordermachine.widget.TitileLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center_horizontal"
+            android:text=""/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.acewill.ordermachine.widget.DropEditText
+                android:id="@+id/member_query_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:background="@drawable/border_black_normal"
+                app:hint="请输入会员卡号/手机号"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border_blue_selector"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/actionbar_search_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:text="@string/chaxun"
+                        android:textColor="@color/color_white"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <com.acewill.ordermachine.widget.MyGridView
+            android:id="@+id/mygridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:horizontalSpacing="@dimen/dp10"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/dp10"></com.acewill.ordermachine.widget.MyGridView>
+
+        <!--制表格-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/container_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_cccccc"
+            android:orientation="vertical">
+            <!--第一行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="姓名"/>
+
+                <TextView
+                    android:id="@+id/member_name"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="性别"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="-"/>
+
+            </LinearLayout>
+            <!--第2行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="手机号"/>
+
+                <TextView
+                    android:id="@+id/member_phone"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="卡号"/>
+
+                <TextView
+                    android:id="@+id/member_uno"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第3行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="会员等级"/>
+
+                <TextView
+                    android:id="@+id/member_gradename"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="生日"/>
+
+                <TextView
+                    android:id="@+id/member_birthday"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第4行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="开卡时间"/>
+
+                <TextView
+                    android:id="@+id/member_registered"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="开卡来源"/>
+
+                <TextView
+                    android:id="@+id/member_type"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第5行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="完善资料时间"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text="-"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="填写生日时间"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="-"/>
+
+            </LinearLayout>
+            <!--第6行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="最后关注时间"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text="-"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="最后取消关注时间"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="-"/>
+
+            </LinearLayout>
+            <!--第7行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="自定义资料"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text="-"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第8行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第9行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="储值/积分"
+                    android:textColor="@color/color_333333"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第10行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="储值余额（元）"/>
+
+                <TextView
+                    android:id="@+id/member_balance"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="累计充值额（元）"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="-"/>
+
+            </LinearLayout>
+            <!--第11行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="积分余额"/>
+
+                <TextView
+                    android:id="@+id/member_credit"
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="累计积分额"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="-"/>
+
+            </LinearLayout>
+            <!--第12行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第13行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="未使用代金券"
+                    android:textColor="@color/color_333333"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text=""/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text=""/>
+
+            </LinearLayout>
+            <!--第14行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="券名称"/>
+
+                <TextView
+
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:text="券数量"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Left"
+                    android:text="起始时间"/>
+
+                <TextView
+                    style="@style/Table_Text_Style_Member_Manager_Right"
+                    android:layout_margin="@dimen/zero_point_one"
+                    android:text="过期时间"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+
+            <com.acewill.ordermachine.widget.MyListView
+                android:id="@+id/mylistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.acewill.ordermachine.widget.MyListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

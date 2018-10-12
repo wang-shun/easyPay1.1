@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80"
+    android:layout_gravity="bottom"
+    android:background="@color/corlor_status">
+
+    <RelativeLayout
+        android:id="@+id/btn_bottom_layout_left"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp25"
+            android:paddingLeft="@dimen/dp35"
+            android:paddingRight="@dimen/dp50"
+            android:paddingTop="@dimen/dp25"
+            android:src="@drawable/icon_back"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bottom_layout_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp200"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp30"/>
+
+    <TextView
+        android:id="@+id/bottom_layout_speclial_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_toRightOf="@id/bottom_layout_price_tv"
+        android:textColor="@color/color_4B4B4B"
+        android:textSize="@dimen/sp20"/>
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_bottom_layout_gopay"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border_orange_selector"
+        android:gravity="center"
+        android:text="结账"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp30"/>
+
+    <!--<TextView-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/tv_resmoney"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_toLeftOf="@id/btn_bottom_layout_gopay"-->
+        <!--android:textSize="@dimen/sp20"/>-->
+
+</RelativeLayout>

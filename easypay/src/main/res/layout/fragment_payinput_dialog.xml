@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="移动支付"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/close_img"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp20"
+        android:paddingTop="@dimen/dp20"
+        android:text="请 曾先生（19945678962）输入密码解锁"
+        android:textColor="@color/color_cccccc"
+        android:textSize="@dimen/sp18"
+        android:visibility="gone"/>
+
+    <!--<EditText-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:id="@+id/id_txt_username"-->
+    <!--android:padding="@dimen/dp8"-->
+    <!--android:layout_width="@dimen/dp350"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/border_black_normal"-->
+    <!--android:hint="请输入活选择具有钱箱权限账户"-->
+    <!--/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="付款码"
+            android:textColor="@color/color_blue"
+            android:textSize="@dimen/sp20"/>
+
+        <com.acewill.ordermachine.widget.CommonEditText
+            android:id="@+id/ligangsuoding_pwd_e2t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/border_black_normal"
+            android:hint="@string/yidongzhifutips"
+            android:padding="@dimen/dp5"></com.acewill.ordermachine.widget.CommonEditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/border_blue_selector"
+        android:padding="@dimen/dp5"
+        android:text="@string/zhifu"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp25"/>
+</LinearLayout>

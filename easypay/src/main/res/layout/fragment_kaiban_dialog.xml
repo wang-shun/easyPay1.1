@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/kaiban"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/gaojishezhi_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/banci2"/>
+
+        <com.acewill.ordermachine.widget.MyGridView
+            android:id="@+id/mygridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="@dimen/dp10"
+            android:listSelector="@color/transparent"
+            android:numColumns="5"
+            android:verticalSpacing="@dimen/dp10"></com.acewill.ordermachine.widget.MyGridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/gaojishezhi_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/shengyujine"/>
+
+        <com.acewill.ordermachine.widget.DropEditText
+            android:id="@+id/qianxiangjine_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp10"
+            app:background="@drawable/border_black_normal"
+            app:drawableRight="@drawable/icon_clear"
+            app:drawableRightVisible="false"
+            app:dropMode="flow_parent"
+            android:layout_marginRight="@dimen/dp20"
+            app:hint="请输入交班钱箱剩余金额"></com.acewill.ordermachine.widget.DropEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kaiban_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp25"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp25"
+        android:background="@drawable/border_blue_selector"
+        android:padding="@dimen/dp5"
+        android:text="@string/kaiban"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp25"/>
+
+</LinearLayout>

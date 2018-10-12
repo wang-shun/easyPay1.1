@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:background="@color/color_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/zhaohuimima"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/close_img"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/qingtongguozhanghaoheyanzhengma"
+        android:textColor="@color/color_666666"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.acewill.ordermachine.widget.DropEditText
+                android:id="@+id/common_user_et"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                app:background="@drawable/border_black_normal"
+                app:drawableRight="@drawable/arrow_down"
+                app:drawableRightVisible="false"
+                app:dropMode="flow_parent"
+                app:hint="@string/qingshuruyonghudenglushoujihao"></com.acewill.ordermachine.widget.DropEditText>
+
+            <TextView
+                android:layout_width="@dimen/dp60"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/common_user_et"
+                android:gravity="center"
+                android:text="@string/zhanghao"
+                android:textColor="@color/color_blue"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+
+                android:id="@+id/pwd_ly"
+                android:layout_width="@dimen/dp300"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <com.acewill.ordermachine.widget.DropEditText
+                    android:id="@+id/common_pwd_et"
+                    android:layout_width="@dimen/dp200"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:background="@drawable/border_black_normal"
+                    app:drawableRight="@drawable/arrow_down"
+                    app:drawableRightVisible="false"
+                    app:dropMode="flow_parent"
+                    app:hint="@string/qingshuruyanzhengma"></com.acewill.ordermachine.widget.DropEditText>
+
+                <TextView
+                    android:id="@+id/btn_send_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/border_blue_selector"
+                    android:paddingBottom="@dimen/dp7"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp7"
+                    android:text="@string/fasongyanzhengma"
+                    android:textColor="@color/color_white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/dp60"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@id/pwd_ly"
+                android:gravity="center"
+                android:text="@string/yanzhengma"
+                android:textColor="@color/color_blue"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp25"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp25"
+            android:background="@drawable/border_blue_selector"
+            android:padding="@dimen/dp5"
+            android:text="@string/chongzhimima"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp25"/>
+
+    </LinearLayout>
+
+</LinearLayout>

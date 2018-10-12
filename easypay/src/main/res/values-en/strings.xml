@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">自选快餐云POS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="system_name">奥琦玮连锁智慧快餐运营管理系统</string>
+    <string name="back"><![CDATA[< 返回]]></string>
+    <string name="dingdantongji">订单统计</string>
+    <string name="kaiqianxiang">开钱箱</string>
+    <string name="ligangsuoding">离岗锁定</string>
+    <string name="gongnengxuanxiang">Function</string>
+    <string name="zhongduandanhao">终端单号:</string>
+    <string name="yidongzhifu">Online_Pay</string>
+    <string name="xianjin">Cash</string>
+    <string name="yuangongshitika">员工实体卡</string>
+    <string name="xianjin_ten">现金10</string>
+    <string name="xianjin_twenty">现金20</string>
+    <string name="yinlianka">银联卡</string>
+    <string name="xianjin_fifty">现金50</string>
+    <string name="banci">班次:</string>
+    <string name="youxiaodanshu">有效单数:</string>
+    <string name="jine">金额:</string>
+    <string name="danyin">打印</string>
+    <string name="zaixian">在线</string>
+    <string name="huiyuanchaxun">会员查询</string>
+    <string name="jiaobanjilu">交班记录</string>
+    <string name="yuyanqiehuan">语言|English</string>
+    <string name="gaojishezhi">高级设置</string>
+    <string name="login_out">退出</string>
+    <string name="shouyinbuzhou">*收银步骤</string>
+    <string name="shouyinbuzhou1">1.输入计算后的菜品金额</string>
+    <string name="shouyinbuzhou2">2.选择一种支付方式完成支付</string>
+    <string name="shouyinbuzhou3">3.自动打印消费小票（在功能菜单-高级\n设置-终端配置处可配置是否打印）.</string>
+    <string name="qingkong">C</string>
+    <string name="yunfuwu">云&#160;服&#160;务: </string>
+    <string name="yunfuwu_ip">www.smarant.com</string>
+    <string name="lianxiwomen">联系我们: </string>
+    <string name="company_name">奥琦玮信息科技（深圳）有限公司</string>
+    <string name="lianxidizhi">联系地址:</string>
+    <string name="company_address">深圳市南山区丽山路大学城创业园桑泰大厦1401</string>
+    <string name="lianxifangshi">联系方式:</string>
+    <string name="company_lianxifangshi">400-0103000 | 0755-86719362</string>
+    <string name="zaixianbangzhu">在线帮助:</string>
+    <string name="company_zaixianbangzhu">6101613896(QQ) | playboy_zlh(Wechat)</string>
+    <string name="gengduozixun">更多资讯:</string>
+    <string name="company_gengduozixun">www.acewill.cn(欢迎访问奥琦玮官方了解更多前沿产品和行业资讯)</string>
+    <string name="banbengengxin">版本更新:</string>
+    <string name="zhongduanmingcheng">终端名称:</string>
+    <string name="shouquanma">授&#160; 权&#160; 码:</string>
+    <string name="ip_address">IP&#160; 地&#160; 址&#160;:</string>
+    <string name="caozuoxitong">操作系统:</string>
+    <string name="jiebangzhongduan">解绑终端</string>
+    <string name="caozuoxitong_name">Android</string>
+    <string name="zhongduanpeizhi">终端配置</string>
+    <string name="zhongduanpeizhi1">移动支付默认为反扫方式，关闭则为正扫</string>
+    <string name="zhongduanpeizhi2">结账时是否打印消费小票</string>
+    <string name="zhongduanpeizhi3">结账小票打印张数</string>
+    <string name="zhongduanpeizhi4">在结账小票上打印电子发票二维码</string>
+    <string name="zhongduanpeizhi5">称重时皮重设置</string>
+    <string name="zhongduanpeizhi6">称重时重量四舍五入</string>
+    <string name="mendianmingcheng">门店名称:</string>
+    <string name="mendianid">门&#160; 店&#160; ID&#160;:</string>
+    <string name="suoshupinpai">所属品牌:</string>
+    <string name="pinpaiid">品&#160; 牌&#160; ID:</string>
+    <string name="suoshuquyu">所属区域:</string>
+    <string name="mendianleixing">门店类型:</string>
+    <string name="mendiandizhi">门店地址:</string>
+    <string name="mendianzuoji">门店座机:</string>
+    <string name="yingyemianji">营业面积:</string>
+    <string name="guanliyuan">管&#160; 理&#160; 员:</string>
+    <string name="shouquandaoqi">授权到期:</string>
+    <string name="dingdancaozuo">订单操作</string>
+    <string name="quanxiananquan">权限安全</string>
+    <string name="dingdancaozuo1">交班时打印交班小票</string>
+    <string name="dingdancaozuo2">退单时收银台打印退单小票</string>
+    <string name="quanxiananquan1">退单权限不足时支持授权</string>
+    <string name="fuwurenxian">服务热线 400-0103000</string>
+    <string name="mingcheng">名称</string>
+    <string name="leixing">类型</string>
+    <string name="ip">IP</string>
+    <string name="guanlianpos">关联POS</string>
+    <string name="zhuangtai">状态</string>
+    <string name="caozuo">操作</string>
+    <string name="ceshidayin">测试打印</string>
+    <string name="xiadanshijian">下单时间</string>
+    <string name="jintian">今天</string>
+    <string name="zuotian">昨天</string>
+    <string name="quanbu">全部</string>
+    <string name="dayinji">打&#160;&#160;印&#160;&#160;机</string>
+    <string name="dayinzhungtai">打印状态</string>
+    <string name="yiwancheng">已完成</string>
+    <string name="weiwancheng">未完成</string>
+    <string name="qingshurudayiinbianhua">请输入打印编号、订单号</string>
+    <string name="dayinbianhao">打印编号</string>
+    <string name="dingdanhao">订单号</string>
+    <string name="dingdanjine">订单金额</string>
+    <string name="zhifufangshi">支付方式</string>
+    <string name="shishoujine">实收金额&#160;:</string>
+    <string name="dingdanshuliang">订单数量&#160;:</string>
+    <string name="youhuijine">优惠金额&#160;:</string>
+    <string name="tuikuanjine">退款金额&#160;:</string>
+    <string name="kaishishijian">开始时间:</string>
+    <string name="jiesushijian">结束时间:</string>
+    <string name="changyongshijian">常用时间:</string>
+    <string name="dingdanzhuangtai">订单状态：</string>
+    <string name="zhifufangshi2">支付方式:</string>
+    <string name="dingdan_tips">提示:仅有退款权限人员能且只能对今日内订单操作退款</string>
+    <string name="退单">退单</string>
+    <string name="queding">确定</string>
+    <string name="shishoujine2">实收金额:</string>
+    <string name="dingdanhao2">订单号:</string>
+    <string name="kaiban">开班</string>
+    <string name="shengyujine">剩余金额</string>
+    <string name="banci2">班&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;次</string>
+    <string name="jiaoban">交班</string>
+    <string name="qianxiangjine">钱箱金额</string>
+    <string name="budajiaojieban">补打交接班</string>
+    <string name="chaxun">查询</string>
+    <string name="budaxiaopiao">补打小票</string>
+    <string name="dianjithreetime">点击3次该区域进入云服务环境选择</string>
+    <string name="yunfuwuxuanze">云服务选择</string>
+    <string name="baocun">保存</string>
+    <string name="zhihuikuaicanyunxingguanlixitong">智慧快餐运营管理系统</string>
+    <string name="qunazhao">去哪找?</string>
+    <string name="where_tofind_terminal_code_tip1">在ds</string>
+    <string name="where_tofind_terminal_code_tip2">营管理-收银终端管理中，状态为“未激</string>
+    <string name="where_tofind_terminal_code_tip3">活“、类型为”收银台POS“的授权码</string>
+    <string name="bangzhu">帮助</string>
+    <string name="shanghuzhifupingtaidingdanhao">商户支付平台订单号</string>
+    <string name="zhifu">支付</string>
+    <string name="qingsaohuiyuan">请输入或扫会员二维码、会员卡号/手机号</string>
+    <string name="huiyuanzhifu">会员支付</string>
+    <string name="yidongzhifutips">请输入或扫描顾客微信、支付宝付款码</string>
+    <string name="dayinguanli">打印管理</string>
+    <string name="dayinjizhuangtai">打印机状态</string>
+    <string name="dayinjilv">打印记录</string>
+    <string name="wangjimima">忘记密码？</string>
+    <string name="zhaohuimima">找回密码</string>
+    <string name="qingtongguozhanghaoheyanzhengma">请通过账号和验证码信息找回密码</string>
+    <string name="zhanghao">账&#160;&#160;&#160;&#160;号</string>
+    <string name="qingshuruyonghudenglushoujihao">请输入用户登录手机号或邮箱</string>
+    <string name="qingshuruyanzhengma">请输入验证码</string>
+    <string name="yanzhengma">验证码</string>
+    <string name="chongzhimima">重置密码</string>
+    <string name="tuidan">退单</string>
+    <string name="fasongyanzhengma">发送验证码</string>
+    <string name="gengxin">更新</string>
+    <string name="wangluozhuangtai">网络状态</string>
+    <string name="wangluolianjie_zhongdaunshebei_tv">终端IP:192.168.1.101</string>
+    <string name="wangluolianjie_luyouqi_tv">路由器</string>
+    <string name="wangluolianjie_internet_tv">internet</string>
+    <string name="wangluolianjie_smarnt_tv">smarant</string>
+    <string name="jiance">检测</string>
+    <string name="jiancejianguo">[检测结果]</string>
+    <string name="zhixingzhuangtai">执行状态:</string>
+    <string name="jiancejieguo">检测结果:</string>
+    <string name="yichangwenti">异常问题:</string>
+    <string name="wancheng">完成</string>
+    <string name="wangluozhengchang">网络正常</string>
+    <string name="wu">无</string>
+    <string name="chulifangancankao">[处理方案参考]</string>
+    <string name="tuidanshuliang">退单数量:</string>
+    <string name="jiaobanbingrijie">交班并日结</string>
+    <string name="rijie">日结</string>
+    <string name="yingwen">English</string>
+    <string name="jiantizhongwen">中文</string>
+    <string name="daijinquan">代金券</string>
+    <string-array name="spingarr">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+
+
+    <string-array name="dingdanzhuangtai">
+        <item>全部</item>
+        <item>已支付</item>
+        <item>已退单</item>
+    </string-array>
+
+
+    <string-array name="zhifufangshi">
+
+        <item>全部</item>
+        <item>会员储值</item>
+        <item>支付宝</item>
+        <item>微信</item>
+        <item>现金</item>
+    </string-array>
+
+
+    <string-array name="changyongshijian">
+        <item>今天</item>
+        <item>昨天</item>
+        <item>前天</item>
+        <item>本周</item>
+        <!--<item>上周</item>-->
+        <item>本月</item>
+    </string-array>
+
+    <string-array name="jiaojiebanzhuangtai">
+        <item>全部</item>
+        <item>已交班</item>
+        <item>未交班</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,310 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>餐行健·数字化餐饮服务系统</title>
+	<link href="base/css/font-awesome.css" rel="stylesheet" type="text/css">	
+	<link href="css/layoutstyle.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript">
+		window.onload = function(){
+			var	data =  eval('('+localStorage.getItem('data')+')');
+			if(data == null || data == "" ){
+				 //window.open("index.html","_parent");
+			}
+			var userInfo =  eval('('+localStorage.getItem('msg')+')');
+			iLayout.userName = userInfo.rname;
+			iLayout.warrant = userInfo.uid;
+			iLayout.initData();
+		} ;
+	</script>
+</head>
+<body > 
+	<audio id="soundDiv" style="width: 0px;height: 0px;"> </audio> 
+	<header> 
+		<div  id="wayof_make" class="cookinfo"> </div>	
+	</header>
+	<div class="intopeo-wfrm" id="intopeo_layout">
+		<iframe id="intopeo_wdlg" src="intopeonumview.html"> </iframe>
+	</div>
+	<div class="callscreen-wfrm" id="callscreen_layout">
+		<iframe id="callscreen_wdlg" src="callscreen.html"> </iframe>
+	</div>
+	<div class="retreatinfodlg" id="retreatinfo_layout">
+		<iframe id="retreatinfo_wfrm" src="retreatfoodview.html"> </iframe>
+	</div>
+	<div id="shadeDiv"> </div>
+	<div class="choosedlg" id="choosedish_layout">
+		<iframe id="choosedish_wfrm" src="choosedishview.html"> </iframe>	
+	</div>
+	<div class="madifynumdlg" id="madifynum_layout">
+		<iframe id="madifynum_wfrm" src="madifynumview.html"> </iframe>	
+	</div>
+	<div class="cookiinfodlg" id="cookiinfo_layout">
+		<iframe id="cookiinfo_wfrm" src="cookinfoview.html"> </iframe>	
+	</div>
+	<div class="cookiinfodlg" id="remarksinfo_layout">
+		<iframe id="remarksinfo_wfrm" src="remarksinfoview.html"> </iframe>	
+	</div>
+	<div class="checkoutinfoinfodlg" id="checkoutinfo_layout">
+		<iframe id="checkoutinfo_wfrm" src="checkoutview.html"> </iframe>	
+	</div>
+	<div class="singleinfodlg" id="singleinfo_layout">
+		<iframe id="singleinfo_wfrm" src="singleinfoview.html"> </iframe>
+	</div>
+	<div class="reportfrominfodlg" id="reportfrom_layout">
+		<iframe id="reportfrom_wdlg" src="reportfromview.html"> </iframe>
+	</div>
+	<div class="takeout-wfrm" id="takeout_layout">
+		<iframe id="takeout_wdlg" src="takeoutview.html"> </iframe>
+	</div>
+	<div class="keybord-div" id="keyboard_div">
+		<div id="keyboard"  >
+			<button onclick="iLayout.onClickKeyBoard(this.value)" value="Q"><div>Q</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="W"><div>W</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="E"><div>E</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="R"><div>R</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="T"><div>T</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="Y"><div>Y</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="U"><div>U</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="I"><div>I</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="O"><div>O</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="P"><div>P</div></button> 
+			<button onclick="iLayout.onClickKeyBoard(this.value)" value="A"><div>A</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="S"><div>S</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="D"><div>D</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="F"><div>F</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="G"><div>G</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="H"><div>H</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="J"><div>J</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="K"><div>K</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="L"><div>L</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="."><div>.</div></button>  
+			<button onclick="iLayout.onClickKeyBoard(this.value)" value="Z"><div>Z</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="X"><div>X</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="C"><div>C</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="V"><div>V</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="B"><div>B</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="N"><div>N</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="M"><div>M</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="-1"><div>退格</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="-2" ><div>取消</div></button><button onclick="iLayout.onClickKeyBoard(this.value)" value="-3" ><div>确定</div></button>
+		</div>
+	</div>
+	<div class="body_left">
+		<div class="body_left_list">
+			<div class="body_left_list_header">
+				<div class="body_left_list_header_top">
+					<div class="body_left_list_header_top_one">序号</div>
+					<div class="body_left_list_header_top_two">菜单</div>
+					<div class="body_left_list_header_top_three">赠</div>
+				</div>
+				<div class="body_left_list_center" id="orderlist_layout" >
+				</div>
+				<div style="width: 100%;height: 5%;background-color: #2B2B2B;line-height: 32px;">
+					<span style="float: left;width: 50%; text-align: left;">
+						<label class="label_one" >合计:</label>
+						<label id ="dishstAmount" class="label_two">0.00</label>
+					</span>
+					<span style="float: left;width: 50%; text-align: left;">
+						<label class="label_one" >数量:</label>
+						<label id="dishstTotal" class="label_two">0份</label>
+					</span>
+				</div>
+			</div>
+			<div class="foodlist-bottomdiv">
+				<button onclick ="iLayout.uporderlistpage()"><div>上一页</div></button><button onclick ="iLayout.underorderlistpage()"><div>下一页</div></button><button style="width: 115px;" onclick ="iLayout.billDishList()"><div>结账</div></button>
+				<br>
+				<span class="foodlistbottomdiv-l">
+					<label class="label_three" >操作人:</label>
+					<label class="label_three" id="userName"> </label>
+				</span>
+				<span class="foodlistbottomdiv-r">
+					<label class="label_three" >点菜时间:</label>
+					<label class="label_three" id="nowTime"> </label>
+				</span>
+			</div>
+		</div>
+		<div class="normalbtn-div">
+			<div class="normal-btn">
+				<button id="btnAddDishNum" onclick="iLayout.onClickAddDishNum()" style="margin-top: 0px;"><div>+</div></button>
+				<button id="btnDelDishNum" onclick="iLayout.onClickDelDishNum()"><div>-</div></button>
+				<button id="btnDishNum" onclick="iLayout.openMadifyNum()"><div>数量</div></button>
+				<!--<button id="btnPractice" onclick="iLayout.onClickPractice();"><div>做法</div></button>-->
+				<button id="btnRemarks"  onclick="iLayout.onClickRemarks(1);"><div>备注</div></button>
+				<button id="btnGiftMeal" onclick="iLayout.onClickGiftMeal()"><div>赠送</div></button>
+				<button id="btnDelDish"  onclick="iLayout.onClickDelDish(-1)"><div>删菜</div></button>
+				<button id="btnHangOrderNum" onclick="iLayout.onclickopensing()" ><div>挂单</div></button>
+				<button id="btnRaplaceMeal" onclick="iLayout.onclickrepmeal()"><div>换餐</div></button>
+				<!--<button id="btnMember"  onclick="iLayout.onClickMember()"><div>会员</div></button>-->
+				<!--<button id="btnSetInfo" onclick="iLayout.onClickSetInfo()"><div>设置</div></button>-->
+				<button id="btnOrderRemark"  onclick="iLayout.onClickRemarks(-1)"><div>全单备注</div></button>
+				<button id="btnHangRecallOrder" onclick="iLayout.onclickopensing()" ><div>调单</div></button>
+				<button   onclick="iLayout.onClickReportFrom()"><div>管理</div></button>
+				<button   onclick="iLayout.onClickTakeOut()" id="takeout_layoutbtn" style="display: none;">
+					<div class="waimainum-div" id="waimainum"> </div>
+				<div>外卖</div>
+				</button>
+				<button   onclick="iLayout.changeCheckType()" id="checktype_layoutbtn" >
+					<div>堂食</div>
+				</button>
+			</div>
+		</div>
+		
+	</div>
+	<div id="recalled_order_no" editable=false></div>	
+	<div id="scanned_data"></div>	
+	<div class="body_right">
+		<div class="foodlist-classify">
+			<div class="body_header_btn">
+				<button type="button" onclick="iLayout.islGoUp()"><div class="body_header_btn_div"><div class="icon-caret-left"> </div></div></button>
+			</div>
+			<div id="foodkind_btns" class="foodkind_btns">
+			</div>
+			<div class="body_header_btn">
+				<button type="button" onclick="iLayout.islGoDown()"><div class="body_header_btn_div"><div class="icon-caret-right"> </div></div></button>
+			</div>
+		</div>
+		<div class="body_right_center">
+				<div id="allFoodList" class="allfoodlist-div" >
+					
+				</div>
+		</div>
+		<div style="width: 100%;height: 10%;"  >
+			<div style="margin-top: 15px;margin-right: 10px;">
+				<button   style="float: right;line-height: 40px;"   onclick="iLayout.logout()"  class="logout">注销</button>
+				<button  id="encodedText" style="float: right;line-height: 40px;background-color: #FFFFFF;"  onclick="iLayout.openKeyBoard()"   class="encoded" > </button>
+				<label style="float: right;line-height: 40px;">菜品编码/拼音码:</label>
+			</div>
+		</div>
+	</div>
+	<div id="zhezhao" style="display:none;"> </div>
+	<div id="qq-alert"> </div>
+	<script src="base/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="js/layoutview.js" type="text/javascript"></script>
+	<script src="js/common.js" type="text/javascript"></script>
+	<script src="js/func.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var keyFunc = document.onkeydown;
+		document.onkeydown=function(event){
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+			var inputCh = String.fromCharCode(e.keyCode);
+			if( inputCh == 'B' )
+			{
+				document.getElementById("recalled_order_no").innerHTML = "";
+			}
+			else if( inputCh == 'E' )
+			{
+				//recallOrder( document.getElementById("recalled_order_no").innerHTML );
+				parseDishes( document.getElementById("recalled_order_no").innerHTML );
+			}
+			else 
+			{
+				document.getElementById("recalled_order_no").innerHTML += inputCh;
+			}
+			
+			//document.getElementById("scanned_data").innerHTML += e.keyCode; 
+			
+			keyFunc( event );
+        }; 
+		
+		parseDishes = function(orderno)
+		{
+			var dishArray = orderno.split("A");
+			
+			var dishdata = eval('('+localStorage.data+')');
+				
+			for(var idx = 0; idx < dishArray.length ; idx++ )
+			{
+				var pair = dishArray[idx].split("X");
+				var dishid = pair[0];
+				var dishcount = pair[1];
+									
+				var dishname = dishid;
+				var dishprice = "0.0"
+				
+				for(var i = 0;i < dishdata.Dish.length; i++)
+				{
+					if( dishid == dishdata.Dish[i][0] )
+					{
+						dishname = dishdata.Dish[i][3];
+						dishprice = dishdata.Dish[i][22];
+						break;
+					}
+				}
+				
+				if( dishname == dishid )
+				{
+					continue;
+				}
+					
+				var foodinfo ={
+					foodid:dishid,
+					foodname:dishname,
+					foodprice:dishprice,
+					foodoffset:1,
+					issetmeal:1,
+					isgiftmeal:false,
+					ismainfood:false,
+					foodcook:[],
+					foodcookhtml:[],
+					foodcookprice:0,
+					foodcookweight:"",
+					foodnews:"",
+					foodnewshtml:"",
+					foodseat:"",
+					foodnum:dishcount,
+					freeremark:"",
+					setmeallevel:0,
+					arrayindex:0,
+					allarrayindex:0,
+					foodsublist:[],
+					minunit:1
+					};
+					
+				iLayout.listoforderfood.push(foodinfo);
+							
+			}
+			
+			iLayout.changedatainfo();	
+		};
+		
+		recallOrder = function(orderno)
+		{
+			$.ajax({
+				type:"POST",
+				url:"/order/api/api.php?do=getOrderDetail&app=ClientTouchFast",
+				data: {oid:orderno},
+				datatype: "json",
+				success:function(data){
+					var getOrderDetailResp = eval('('+data+')');
+					if(getOrderDetailResp.success == true ){
+						//document.getElementById("recalled_order_no").innerHTML += data;//datainfo.msg;	
+
+						$.each(getOrderDetailResp.order.orderitems,function(n,value) {  
+							orderitem = value;//eval('('+value+')');
+							
+							var dishname = "";
+							
+							var dishdata = eval('('+localStorage.data+')');
+							
+							for(var i = 0;i < dishdata.Dish.length; i++)
+							{
+								if( dishdata.Dish[i][0] == orderitem[6] )
+								{
+									dishname = dishdata.Dish[i][3];
+									break;
+								}
+							}
+							
+							var foodinfo ={
+								foodid:orderitem[6],
+								foodname:dishname,
+								foodprice:orderitem[7],
+								foodoffset:1,
+								issetmeal:1,
+								isgiftmeal:false,
+								ismainfood:false,
+								foodcook:[],
+								foodcookhtml:[],
+								foodcookprice:0,
+								foodcookweight:"",
+								foodnews:"",
+								foodnewshtml:"",
+								foodseat:"",
+								foodnum:1,
+								freeremark:"",
+								setmeallevel:0,
+								arrayindex:0,
+								allarrayindex:0,
+								foodsublist:[],
+								minunit:1
+								};
+								
+							iLayout.listoforderfood.push(foodinfo);
+							iLayout.changedatainfo();							
+						});  	
+	
+					  }else{						
+					 }
+				},
+				error: function(){
+					console.error("iMenu.dateForLogin登录接口报异常!");
+				}
+			});			
+		};
+	</script>
+</body>
+</html>

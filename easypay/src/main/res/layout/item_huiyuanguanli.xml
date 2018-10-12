@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@color/color_cccccc"
+    >
+
+    <TextView
+        android:id="@+id/item_member_quanmingcheng"
+        style="@style/Table_Text_Style_Member_Manager_Left"
+        android:text="券名称"/>
+
+    <TextView
+        android:id="@+id/item_member_quanshuliang"
+        style="@style/Table_Text_Style_Member_Manager_Right"
+        android:text="券数量"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/item_member_quanqishishijian"
+        style="@style/Table_Text_Style_Member_Manager_Left"
+        android:text="起始时间"/>
+
+    <TextView
+        android:id="@+id/item_member_quanguoqishijian"
+        style="@style/Table_Text_Style_Member_Manager_Right"
+        android:layout_margin="@dimen/zero_point_one"
+        android:text="过期时间"
+        android:textColor="@color/gray"/>
+
+</LinearLayout>

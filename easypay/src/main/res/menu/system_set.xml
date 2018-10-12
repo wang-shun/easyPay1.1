@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aoweiqi.diancan.MainActivity" >
+
+    <item
+        android:id="@+id/action_save"
+        android:showAsAction="always|withText"
+        android:icon="@null"
+        android:title="  保存  "/>
+
+</menu>
