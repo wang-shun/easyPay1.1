@@ -65,6 +65,7 @@ public class DingDanTongJiActivity extends BaseActivity implements View.OnClickL
 	 * @param view
 	 */
 	public void feature1(View view) {
+		//新
 		if (member_query_et.getText().toString().equals("功能1")) {
 			member_query_et.setText("jl");
 		} else {
