@@ -59,7 +59,18 @@ public class DingDanTongJiActivity extends BaseActivity implements View.OnClickL
 	private DingDanItemAdapter<OrderReq> adapter;
 	private DropEditText                 member_query_et;
 
-
+	/**
+	 * feature-1
+	 * display HelloWorld
+	 * @param view
+	 */
+	public void feature1(View view) {
+		if (member_query_et.getText().toString().equals("功能1")) {
+			member_query_et.setText("jl");
+		} else {
+			member_query_et.setText("mn");
+		}
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
